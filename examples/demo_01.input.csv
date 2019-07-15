@@ -1,0 +1,4 @@
+String,Nullable String,Integer,Float,Boolean,List
+"Hello, Dolly",23 Skidoo,-5,-3.e-4,True,"[1,""b"",3]"
+,,,,,
+"","",5,5,False,"(1,2,3)"

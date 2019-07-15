@@ -1,0 +1,6 @@
+String,lambda x: x,lambda x: '' if x is None else x,string_v
+Nullable String,lambda x: None if x == '' else x,lambda x: '' if x is None else x,nullable_string
+Integer,lambda x: None if x == '' else int(x),lambda x: '' if x is None else str(x),integer_v
+Float,lambda x: None if x == '' else float(x),lambda x: '' if x is None else str(x),float_v
+Boolean,lambda x: None if x == '' else eval(x),lambda x: '' if x is None else str(x),logical
+List,lambda x: None if x == '' else eval(x),lambda x: '' if x is None else repr(x),list_v

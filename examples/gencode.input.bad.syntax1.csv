@@ -1,0 +1,5 @@
+head 0,lambda x: None if x == '' else x,lambda x: '' if x is None else str(x),head_0
+,lambda x: None if x ==,lambda x: '' if x is None else str(x),column_1
+head 0,lambda x: None if x == '' else x,lambda x: '' if x is None else str(x),column_2
+head 3,lambda x: None if x == '' else x,lambda x: '' if x is None else str(x),head_3
+#@%,lambda x: None if x == '' else x,lambda x: '' if x is None else str(x),column_4
