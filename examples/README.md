@@ -31,7 +31,7 @@ File
  * File
  [demo_01.input.csv](./demo_01.input.csv)
  was used as input to script
- [headings.py](../headings.py)
+ [headings.py](../tabletext/headings.py)
  to produce a list of headdings
  [demo_01.heads.csv](./demo_01.heads.csv)
  without enumeration (no sequence numbers).
