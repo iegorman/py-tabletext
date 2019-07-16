@@ -37,9 +37,9 @@ File
  without enumeration (no sequence numbers).
  * The list of headings was used as input to script
  [gencolumndef.py](../tabletext/gencolumndef.py)
- to creade a draft specification file 'demo_02.columndef.draft.csv'.
+ to creade a draft specification file 'demo_01.columndef.draft.csv'.
  * The draft file was edited to produce the specification file
- [demo_02.columndef.csv](./demo_02.columndef.csv)
+ [demo_01.columndef.csv](./demo_01.columndef.csv)
  * The edited specifcation file was used as input to script
  [gencode.py](../tabletext/gencode.py)
  to produce an initialiizer for class 'table.Column' in module
