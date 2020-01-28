@@ -122,7 +122,7 @@ class GenCode(object):
                 namedict.setdefault(colname, None)
                 columndef.append([heading, infunc, outfunc, colname])
             except Exception as e:
-                raise e.__class__("At row " + str(row_num) + ": " + repr(row)
+                raise RuntimeError("At row " + str(row_num) + ": " + repr(row)
                                 ) from e
             row_num += 1
         return columndef

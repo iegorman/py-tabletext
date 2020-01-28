@@ -289,7 +289,7 @@ class Column(object):
             try:
                 self._column = self._columndictionary(columns)
             except Exception as e:
-                raise e.__class__(
+                raise RuntimeError(
                         "While initializing column definition") from e
             if headingpolicy:
                 self._headingpolicy = headingpolicy
@@ -769,7 +769,7 @@ class Column(object):
                                 ) from e
             except Exception as e:
                 # Any other error can be forwarded with some additional info.
-                raise e.__class__(self._inputlocation(self._line_num)
+                raise RuntimeError(self._inputlocation(self._line_num)
                                  + " Error reading data."
                                  ) from e
             return rowvalues
@@ -826,7 +826,7 @@ class Column(object):
                     self._rowwriter.writerow(self._headings)
                     self._line_num += 1
                 except Exception as e:
-                    raise e.__class__(''.join([
+                    raise RuntimeError(''.join([
                                 self._outputlocation(self._line_num),
                                 " Error writing column headings."])
                                  ) from e
@@ -849,7 +849,7 @@ class Column(object):
                                 [f(d) for (f, d) in zip(self._outfunc, data)])
                 self._line_num += 1
             except Exception as e:
-                raise e.__class__(''.join([
+                raise RuntimeError(''.join([
                                  self._outputlocation(self._line_num),
                                  " Error writing data."])
                                  ) from e

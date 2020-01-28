@@ -117,7 +117,7 @@ class GenColumnDef(object):
                 names.setdefault(name, None)
                 rowwriter.writerow([heading, infunc, outfunc, name])
             except Exception as e:
-                raise e.__class__("At input: " + repr(row)) from e
+                raise RuntimeError("At input: " + repr(row)) from e
 
 if __name__ == "__main__":
     """
